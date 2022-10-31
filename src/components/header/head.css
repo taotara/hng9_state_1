@@ -1,0 +1,45 @@
+.head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+
+.avatar{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: -40px;
+  display: flex;
+  justify-content: end;
+}
+
+#profile__img{
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.hideMobile{
+  display: none;
+}
+
+.slackHidden{
+  display: none;
+}
+
+.name{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px){
+
+  .hideWindow{
+    display: none;
+  }
+
+  .hideMobile{
+  display: inline;
+}
+}

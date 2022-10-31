@@ -1,33 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import taofeek from './img/taofeek.jpg'
-import AvatarMobieWindow from './img/_Avatar share button.svg';
-import AvatarLargeWindow from './img/_Avatar share button1.svg'
-import I4G from './img/I4G.png';
-import Zuri_logo from './img/Zuri_logo.png';
 import slack from './img/Slack_icon.png';
 import github from './img/Icon.svg'
 import { ExternalLink } from 'react-external-link';
-import useWindowSize from './hooks/useWindowSize';
-
+import Head from './components/header/Head.jsx';
+import Footer from './components/footer/Footer';
 
 
 class App extends Component {
   render() {
-
-    const { width } = useWindowSize;
-
+    
     return (
       <div className="container">
-        <div className="avatar">
-          
-          {width > 375 ? <img src={AvatarMobieWindow} alt="My Avatar" /> : <img src={AvatarLargeWindow} alt="My Avatar" />  }
-        </div>
-        <img src={taofeek} alt="Taofeek Aderoju" id='profile__img' />
-        <h1 className='name'>Taofeek Aderoju</h1>
+        <Head />
         <div id='twitter' className='btn'>
           <ExternalLink href="https://twitter.com/taotara">
-            <span>@taotara</span>
+            <span>Twitter</span>
           </ExternalLink>
         </div>
         <div className='btn' id='btn__zuri'>
@@ -59,11 +47,7 @@ class App extends Component {
           <img src={slack} alt="slack" height="24px" />
           <img src={github} alt="github" height="24px" />
         </div>
-        <footer>
-          <img src={Zuri_logo} alt="Zuri Intership" width="138.77px" height="" />
-          <p className='footer'>HNG Internship 9 Front Task</p>
-          <img src={I4G} alt="I4G" width="99.1px" />
-        </footer>
+        <Footer />
         
       </div>
     );
