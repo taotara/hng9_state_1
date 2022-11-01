@@ -13,8 +13,8 @@ function Head() {
           <img src={AvatarMobieWindow} alt="My Avatar" className='hideWindow' /> <img src={AvatarLargeWindow} alt="My Avatar" className='hideMobile' />
       </div>
         <img src={taofeek} alt="Taofeek Aderoju" id='profile__img' />
-        <p className='slackHidden'>Slack handle: taotara</p>
-        <h1 className='name'>Taofeek Aderoju</h1>
+        <p id='slack'>Slack handle: taotara</p>
+        <h1 className='name'>@taotara</h1>
     </header>
   )
 }
