@@ -1,0 +1,90 @@
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 600;
+    color: #101828;
+}
+
+.subtext{
+    font-size: 20px;
+    font-weight: 400;
+    color: #475467;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.formInputName{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formInputOthers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #344054
+;
+}
+
+#first_name, #last_name, #email{
+    width: 100%;
+    height: 44px;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    font-size: 16px;
+    font-weight: 400;
+    color: #667085;
+    padding: 10px;
+}
+
+#message{
+    font-family: inherit;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    font-size: 16px;
+    font-weight: 400;
+    color: #667085;
+    padding: 10px;
+}
+
+.check{
+    border: 1px solid #D0D5DD;
+    margin-right: 10px;
+}
+
+#btn__submit{
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #1570EF;
+    border: 1px solid#1570EF;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 768px){
+    .formInputName{
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+    }
+}
